@@ -516,6 +516,10 @@ footer:first-of-type div img{
     font-size: 50px;
   }
 
+  .burger-menu{
+    display: none !important;
+  }
+
 }
 /* Desktop */
 @media only screen and (min-width: 1200px) {
@@ -537,7 +541,7 @@ footer:first-of-type div img{
   }
 
   .burger-menu{
-    display: none;
+    display: none !important;
   }
 
   .history-title{
