@@ -59,7 +59,7 @@ header div:first-child{
   justify-content: start;
 }
 
-header ul:first-child{
+header div ul:first-child{
   display: none;
 }
 
@@ -547,7 +547,7 @@ footer:first-of-type div img{
     display: none !important;
   }
 
-  header ul:first-child{
+  header div ul:first-child{
     margin: 2rem 4rem;
     display: block;
   }
@@ -663,7 +663,7 @@ footer:first-of-type div img{
     align-self: flex-end;
   }
 
-  header ul:first-child{
+    header div ul:first-child{
     margin: 2rem 10rem;
     display: block;
   }
@@ -676,7 +676,7 @@ footer:first-of-type div img{
     top: 5rem;
   }
 
-  header ul:first-child{
+    header div ul:first-child{
     margin: 2rem 10rem;
     display: block;
   }
