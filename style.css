@@ -1,0 +1,393 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+body{
+  height: 100%;
+  margin: 0;
+}
+
+strong{
+  color: #cbe346;
+}
+
+p, ul{
+  margin: 0;
+}
+
+/* Colors */
+
+.dark{
+  border: solid 1px #282e47;
+}
+
+.white{
+  color: white;
+}
+
+.special-white{
+  background-color: #ebebeb;
+}
+
+.green{
+  background-color: #cbe346;
+}
+
+/* Header Menu & Slider */
+
+header nav{
+  position: fixed; 
+  z-index: 2; 
+  top: 0; 
+  left: 0; 
+  right: 0;
+  bottom: 0;
+  background-color: #f3f4f8; 
+  display: none;
+}
+
+header img{
+  position: absolute;
+  z-index: 3;
+  margin: 2rem;
+  max-width: 39px;
+}
+
+header ul{
+  position: relative; 
+  top: calc(5rem + 35px);
+  padding: 0;
+  margin: 0 3rem;
+}
+
+header ul li{
+  color: white;
+  margin: 0 0 2.6rem 0;
+  font-size: 24px;
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.slider {
+  position: relative; 
+  z-index: 1; 
+  top: 0; 
+  left: 0; 
+  right: 0;
+}
+
+.slider img {
+  max-width: 100%; 
+  height: 100vh; 
+  object-fit: cover;
+}
+
+.slider-text{
+  position: absolute;
+  top: 60%;
+  font-size: 32px;
+  color: white;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.slider-subtext{
+  margin: 1rem 2rem;
+}
+
+.burger-menu{
+  font-size: 40px; 
+  position: absolute; 
+  right: 2rem; 
+  top: 2rem;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.burger-white{
+  color: #f3f4f8; 
+}
+
+.burger-dark {
+  color: #1f1f1f; 
+}
+
+.menu-item{
+  display: inline-block;
+  color: white;
+}
+
+/* Seccion Historia */
+
+.history{
+  display: flex;
+  padding: 3.6rem 2rem 1.6rem 2rem;
+  flex-direction: column;
+  align-items: start;
+}
+
+.history-subtitle{
+  color: #cbe346;
+  font-size: 15px;
+  font-weight: bold
+}
+
+.history-title{
+  font-size: 32px;
+  margin-top: 0.6rem;
+}
+
+.history-content{
+  font-size: 18px;
+  color: #787878;
+  margin-top: 0.6rem;
+}
+
+.Rectangle {
+  width: 269px;
+  height: 53px;
+  padding: 15px 39px 15px 30px;
+  border-radius: 26.5px;
+  display: flex;
+  align-items: center;
+  margin: 1.6rem 2rem;
+}
+
+.Rectangle-2 {
+  width: 269px;
+  height: 53px;
+  padding: 15px 39px 15px 30px;
+  border-radius: 26.5px;
+  display: flex;
+  align-items: center;
+  margin: 1.6rem 2rem;
+}
+
+.btn-end{
+  display: flex;
+  justify-content: space-between;
+  margin: 1.6rem 0;
+}
+
+.text-button{
+  font-size: 13px;
+}
+
+/* Productos Main Content */
+
+main{
+  position: relative;
+}
+
+.border-white{
+  border: solid 1px #fff;
+}
+
+.img-responsive{
+  max-width: 100%; 
+  width: 100%;
+  object-fit: cover; 
+  height: 100%;
+}
+
+.title-text-white{
+  font-size: 32px; 
+  color: white; 
+  margin-bottom: 1rem;
+}
+
+.content-text-white{
+  font-size: 18px;
+  color: white; 
+  margin-bottom: 1.6rem;
+}
+
+.floating-text{
+  position: absolute; 
+  left: 30%; 
+  top: 3rem;
+}
+
+.breadcrumbs{
+  display: flex; 
+  margin-bottom: 1.6rem;
+}
+
+.display-flex{
+  display: flex;
+}
+
+.green-rounded{
+  background-color: #cbe346;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border: none;
+}
+
+.navigation-buttons{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-right: 1.6rem;
+}
+
+.product-slider{
+  position: relative; 
+  margin: 3rem;
+}
+
+.product-img-slider{
+  width: 100%; 
+  height: 50%;
+}
+
+.dot {
+  height: 9.8px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1.6rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.dot-card{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+  width: 40px;
+  height: 39.8px;
+  background-color: #cbe346;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  color: white;
+}
+
+/* Footer & Img separador */
+
+.half-portrait-screen{
+  height: 50vh;
+}
+
+.img-separator{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  object-position: left;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 50vh;
+  background-color: #cbe346;
+}
+
+footer ul:first-of-type{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 0;
+}
+
+footer ul:first-of-type li{
+  display: block; 
+  margin: 0.8rem 0 0.4rem 0;
+}
+
+footer ul:nth-of-type(2){
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  padding: 0; 
+  justify-content: center;
+}
+
+footer ul:nth-of-type(2) li{
+  display: block; 
+  margin: 1rem 0.3rem;
+}
+
+footer:first-of-type div{
+  display: flex; 
+  justify-content: center;
+}
+
+footer:first-of-type div img{
+  margin: 0 0 1.6rem 0;
+}
+
+
+/* Media Queries */
+
+/* Tablet portrait */
+@media only screen and (min-width: 600px) { 
+  .slider-subtext{
+    margin: 0 10rem;
+  }
+
+  .Rectangle {
+    margin: 1.6rem 10rem;
+  }
+
+  .Rectangle-2 {
+    margin: 1.6rem 1rem;
+  }
+
+  .floating-text{
+    left: 6rem; 
+    top: 1rem;
+  }
+
+  .img-responsive{
+    max-width: 42%; 
+    object-fit: cover; 
+    height: 100%;
+  }
+
+  main{
+    display: flex;
+  }
+
+  .product-slider{
+    margin: 2rem;
+  }
+
+  .product-img-slider{
+    max-width: 200px;
+    width: 100%; 
+    height: 100%;
+    max-height: 236px;
+    object-fit: cover;
+  }
+
+  .responsive-tablet{
+    display: -webkit-box;
+  }
+
+}
+/* Tablet landscape */
+@media only screen and (min-width: 900px) {
+
+}
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+
+}
+/* Big desktop (4k) */
+@media only screen and (min-width: 2500px) {
+
+}
