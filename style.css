@@ -52,6 +52,17 @@ header nav{
   display: none;
 }
 
+header div:first-child{
+  position: fixed; 
+  z-index: 2; 
+  display: flex; 
+  justify-content: start;
+}
+
+header ul:first-child{
+  display: none;
+}
+
 header img{
   position: absolute;
   z-index: 3;
@@ -59,14 +70,14 @@ header img{
   max-width: 39px;
 }
 
-header ul{
+header nav ul{
   position: relative; 
   top: calc(5rem + 35px);
   padding: 0;
   margin: 0 3rem;
 }
 
-header ul li{
+header nav  ul li{
   color: white;
   margin: 0 0 2.6rem 0;
   font-size: 24px;
@@ -104,6 +115,11 @@ header ul li{
 .slider-subtext{
   margin: 1rem 2rem;
 }
+
+.vertical-line{
+  display: none;
+}
+
 
 .burger-menu{
   font-size: 40px; 
@@ -477,6 +493,17 @@ footer:first-of-type div img{
     align-self: flex-end;
     }
 
+  .vertical-line{
+    position: absolute;
+    top: 0;
+    left: 6.6rem;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    border-left: 4px solid white;
+    display: block;
+  }
+
 }
 
 /* Tablet landscape */
@@ -520,9 +547,30 @@ footer:first-of-type div img{
     display: none !important;
   }
 
+  header ul:first-child{
+    margin: 2rem 4rem;
+    display: block;
+  }
+  
+  header ul li{
+    margin: 0 3rem;
+  }
+
 }
 /* Desktop */
 @media only screen and (min-width: 1200px) {
+
+  .vertical-line{
+    position: absolute;
+    top: 0;
+    left: 8.6rem;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    border-left: 4px solid white;
+    display: block;
+  }
+
   .slider-subtext{
     margin: 0 20rem;
   }
@@ -540,8 +588,12 @@ footer:first-of-type div img{
     top: 10rem;
   }
 
-  .burger-menu{
+  /* .burger-menu{
     display: none !important;
+  } */
+
+  header ul li{
+    margin: 0 3rem;
   }
 
   .history-title{
@@ -609,14 +661,24 @@ footer:first-of-type div img{
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end;
-    }
+  }
+
+  header ul:first-child{
+    margin: 2rem 10rem;
+    display: block;
+  }
 }
 
-/* Big desktop (4k) */
+/* width: 1200px */
 @media only screen and (width: 1200px) {
   .floating-text{
     left: 12rem; 
     top: 5rem;
+  }
+
+  header ul:first-child{
+    margin: 2rem 10rem;
+    display: block;
   }
 
 }
